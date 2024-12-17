@@ -65,11 +65,7 @@ export const theme = createTheme({
 
 function App() {
   return (
-    <div>
-
-    
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3860233258250214"
-       crossOrigin="anonymous"></script>
+    <div>    
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
