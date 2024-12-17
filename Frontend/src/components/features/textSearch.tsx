@@ -11,7 +11,7 @@ import {
   styled,
 } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
-import api from '../../services/api';
+// import api from '../../services/api';
 import MarketStats from './marketStats';
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
@@ -72,7 +72,7 @@ export default function TextSearchForm() {
   return (
     <Fade in={true} timeout={800}>
       <StyledPaper elevation={3}>
-        <FormContainer component="form" onSubmit={handleSubmit}>
+        <FormContainer onSubmit={handleSubmit}>
           <Typography 
             variant="h5" 
             align="center" 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@mui/material";
-
+//@ts-ignore
 function ButtonComponent({text, onClick, color}){
 
       const [isPressed, setIsPressed] = useState(false)

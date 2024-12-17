@@ -80,7 +80,7 @@ export default function ScannerForm({ initialText = '', onSubmit }: TextSearchFo
   return (
     <Fade in={true} timeout={800}>
       <StyledPaper elevation={3}>
-        <FormContainer component="form">
+        <FormContainer>
           <Typography 
             variant="h5" 
             align="center" 
