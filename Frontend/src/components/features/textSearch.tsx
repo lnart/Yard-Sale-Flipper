@@ -14,6 +14,8 @@ import SendIcon from '@mui/icons-material/Send';
 // import api from '../../services/api';
 import MarketStats from './marketStats';
 
+
+
 const StyledPaper = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(3),
   maxWidth: 400,
@@ -41,6 +43,12 @@ export default function TextSearchForm() {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
+  const average = 150
+  const highestPrice = average + (average/6)
+  const lowestPrice = average - (average/8)
+  const itemsSold = 300
+  const itemsUploaded = itemsSold * 2.8
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -54,13 +62,12 @@ export default function TextSearchForm() {
     setSuccess(false);
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise(resolve => setTimeout(resolve, 100));
       // const res = await api.post("/text", {
       //   formData
       // })
       // if(res.status === 200){
         setSuccess(true);
-        setFormData({ text: '' });
       // }
     } catch (err) {
       setError('Something went wrong. Please try again.');
@@ -120,6 +127,7 @@ export default function TextSearchForm() {
             type="submit"
             variant="contained"
             disabled={isLoading}
+            onClick={handleSubmit}
             sx={{
               borderRadius: '8px',
               padding: '12px',
@@ -152,11 +160,11 @@ export default function TextSearchForm() {
                 }}
               >
               <MarketStats
-              averagePrice={100}
-              highestPrice={130}
-              lowestPrice={70}
-              uploadsLast90Days={322}
-              salesLast90Days={90}
+              averagePrice={average}
+              highestPrice={highestPrice}
+              lowestPrice={lowestPrice}
+              uploadsLast90Days={itemsUploaded}
+              salesLast90Days={itemsSold}
               ></MarketStats>
                 
               </Alert>
