@@ -35,7 +35,7 @@ import {
               }}
               
             >
-              Yard Sale Flipper
+              Flea-Market Flipper
             </Typography>
           </Toolbar>
       </AppBar>

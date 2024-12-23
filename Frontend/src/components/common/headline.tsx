@@ -58,7 +58,7 @@ export default function PageHeadline() {
   return (
     <HeadlineContainer>
       <StyledHeadline variant="h1">
-        Yard Sale <span>Flipper</span>
+        Flea-Market <span>Flipper</span>
       </StyledHeadline>
       <Subtitle variant="subtitle1">
         Transform your finds into profitable treasures

@@ -115,7 +115,7 @@ import {
                 WebkitTextFillColor: 'transparent',
               }}
             >
-              Yard Sale Flipper
+              Flea-Marketn Flipper
             </Typography>
             <Typography
               variant="h6"
@@ -126,7 +126,7 @@ import {
                 lineHeight: 1.4,
               }}
             >
-              Turn yard sale finds into profitable treasures
+              Turn Flea-Market finds into profitable treasures
             </Typography>
             <CTAButton
               variant="contained"
