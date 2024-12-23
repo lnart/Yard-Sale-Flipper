@@ -115,7 +115,7 @@ import {
                 WebkitTextFillColor: 'transparent',
               }}
             >
-              Flea-Marketn Flipper
+              Flea-Market Flipper
             </Typography>
             <Typography
               variant="h6"
